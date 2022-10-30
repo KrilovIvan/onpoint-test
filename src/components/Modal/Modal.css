@@ -1,0 +1,120 @@
+.modal {
+  position: absolute;
+  width: 1024px;
+  height: 768px;
+  top: 0;
+  right: 0;
+  left: 2048px;
+  bottom: 0;
+  background-color: rgb(22, 39, 62);
+  opacity: 0.702;
+  z-index: 3;
+}
+
+.modal-contaner {
+  position: absolute;
+  top: 123px;
+  left: 2188.5px;
+  width: 822.5px;
+  height: 573px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 40px;
+  z-index: 3;
+  padding-left: 205px;
+}
+
+.modal-contaner__title {
+  margin-top: 39px;
+}
+
+.modal-contaner__title-advant {
+  font-family: "DIN Pro";
+  font-size: 27px;
+
+  text-align: left;
+  letter-spacing: 0.06em;
+  color: rgb(36, 36, 36);
+}
+
+.modal-contaner__title-brend {
+  font-family: "Gilroy";
+  font-size: 95px;
+  letter-spacing: 0.11em;
+  color: rgb(36, 36, 36);
+  line-height: 1;
+  text-align: left;
+  margin-left: -5px;
+}
+
+.modal-contaner__pages {
+  margin-top: 15px;
+}
+
+.modal-contaner__title-advant-close {
+  display: flex;
+  flex-direction: row;
+  gap: 308.5px;
+}
+
+.close-modal {
+  width: 33.5px;
+}
+
+.modal-buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 56px;
+}
+
+.modal-buttons__btn-left {
+  margin-right: 19.5px;
+}
+
+.modal-buttons__btn-left,
+.modal-buttons__btn-right {
+  width: 9px;
+}
+
+.circle,
+.circle-pink {
+  width: 10.5px;
+  height: 10.5px;
+  border-radius: 5px;
+  margin-right: 10px;
+  transition: 0.5s;
+}
+.circle {
+  background-color: transparent;
+  border: 1px solid black;
+}
+.circle-pink {
+  background-color: rgb(252, 109, 169);
+  border: none;
+}
+
+.modal-buttons__btn-right {
+  margin-left: 11px;
+}
+
+.modal-buttons__btn-cont {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+
+.modal-contaner {
+  opacity: 0;
+  transition: 1s;
+  animation: show 1s 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

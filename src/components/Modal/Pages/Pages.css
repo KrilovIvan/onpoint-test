@@ -1,0 +1,26 @@
+@font-face {
+  font-family: "DIN Pro";
+  src: url("../../../fonts/DINPro.ttf") format("truetype");
+}
+.pages__num {
+  color: rgb(140, 201, 232);
+  font-family: "Gilroy";
+  font-weight: bold;
+  line-height: 1.2;
+  font-size: 25px;
+}
+.pages__text {
+  width: 496px;
+  margin: 0;
+  padding: 0;
+  font-family: "DIN Pro";
+  color: rgb(46, 46, 46);
+  line-height: 1.2;
+  font-size: 25px;
+}
+
+.pages__cont {
+  margin-bottom: 23.5px;
+  transition: 1s;
+  animation: show 2s 1;
+}

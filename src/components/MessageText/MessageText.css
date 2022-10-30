@@ -1,0 +1,123 @@
+@font-face {
+  font-family: "DIN Pro";
+  src: url("../../fonts/DINPro.ttf") format("truetype");
+}
+* {
+  box-sizing: border-box;
+}
+
+.MessageText-contaner {
+  background: url("../../media/bgMessageText.png");
+  background-size: 1024px 768px;
+  width: 1024px;
+  height: 768px;
+}
+
+.MessageText__text-contaner {
+  margin-top: 136px;
+  margin-left: 65px;
+  margin-right: 131px;
+}
+
+.MessageText__title {
+  font-family: "DIN Pro";
+  font-size: 27px;
+  margin-left: 0px;
+}
+
+.MessageText__scrollNtext {
+  display: flex;
+  flex-direction: row;
+  margin-top: 46.5px;
+}
+
+.MessageText__text {
+  position: relative;
+  margin-left: 51.5px;
+  margin-top: -220px;
+  font-family: "DIN Pro";
+  font-size: 22px;
+  line-height: 30px;
+  background-color: white;
+  width: 775px;
+  height: 445px;
+  text-align: left;
+  border-radius: 40px;
+  padding: 30.5px 51.5px 10px 31px;
+  overflow-y: hidden;
+  letter-spacing: 0.005em;
+  box-shadow: 2.723px 4.1865px 116.25px 8.75px rgba(157, 185, 198, 0.39);
+}
+
+.body_txt {
+  border-radius: 80px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 5.446px 8.387px 232.5px 17.5px rgba(157, 185, 198, 0.39);
+  position: absolute;
+  left: 236px;
+  top: 480px;
+  width: 1550px;
+  height: 890px;
+  z-index: 28;
+}
+
+input[type="range"] {
+  margin-top: 215.5px;
+  width: 415px;
+  -webkit-appearance: none;
+  background-color: transparent;
+  height: 20px;
+  transform: rotate(90deg);
+  margin-left: -187px;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  -webkit-appearance: none;
+  width: 445px;
+  height: 5px;
+  background-color: black;
+  display: flex;
+  outline: none;
+  border-radius: 5px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 104px;
+  height: 20px;
+  cursor: pointer;
+  border-radius: 9.75px;
+  background: rgb(255, 106, 159);
+  padding: 0;
+  margin: -7.5px 0px 0px 0px;
+  z-index: 10;
+}
+
+.sperm1,
+.sperm2,
+.sperm3,
+.sperm4,
+.sperm5 {
+  position: absolute;
+  width: 1024px;
+}
+
+.sperm1 {
+  opacity: 0.529;
+}
+
+.sperm2 {
+  opacity: 0.49;
+}
+
+.sperm3 {
+  opacity: 0.49;
+}
+
+.sperm4 {
+  opacity: 0.49;
+}
+
+.sperm5 {
+  opacity: 0.529;
+}

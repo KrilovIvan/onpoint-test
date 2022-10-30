@@ -1,0 +1,47 @@
+.slider-contaner {
+  display: flex;
+  flex-direction: row;
+  height: 768px;
+  width: 1024px;
+}
+
+.slider-contaner__window {
+  height: 768px;
+  width: 1024px;
+
+  overflow: hidden;
+}
+
+.slider-contaner__all-pages-contaner {
+  height: 768px;
+  display: flex;
+
+  transition-duration: 300ms;
+  transition-timing-function: ease-in-out;
+}
+
+.homeIcon {
+  top: 25.5px;
+  left: 66px;
+  z-index: 1;
+  width: 153px;
+}
+
+.slider {
+  height: 768px;
+  width: 1024px;
+  position: relative;
+}
+
+.slider-contaner,
+.homeIcon,
+.logo {
+  position: absolute;
+}
+
+.logo {
+  left: 69.5px;
+  bottom: 13.5px;
+  z-index: 1;
+  width: 77px;
+}

@@ -1,0 +1,142 @@
+@font-face {
+  font-family: "Gilroy Light";
+  src: url("../../fonts/GilroyLight.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Gilroy ExtraBold";
+  src: url("../../fonts/Gilroy-Extrabold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "DIN Pro Regular";
+  src: url("../../fonts/DINPro.ttf") format("truetype");
+}
+.mainPage-contaner {
+  position: relative;
+  background: url("../../media/bgMainPage1.png");
+  background-size: 1024px 768px;
+  width: 1024px;
+  height: 768px;
+}
+
+.mainPage__blueBranch {
+  width: 125.5px;
+  margin-top: 72.5px;
+}
+
+.mainPage__pinkSperm {
+  width: 591.5px;
+  position: absolute;
+  top: 155px;
+  left: 432.5px;
+  z-index: 2;
+}
+
+.mainPage__bakt1 {
+  width: 73px;
+  position: absolute;
+  top: 503.5px;
+  left: 22.5px;
+}
+
+.mainPage__bakt2 {
+  position: absolute;
+  left: 744.5px;
+  top: 61.5px;
+  width: 62.5px;
+}
+
+.mainPage__virus1 {
+  position: absolute;
+  left: 861.5px;
+  top: 200.5px;
+  width: 110.5px;
+}
+
+.mainPage__virus2 {
+  position: absolute;
+  left: 542px;
+  top: 641.5px;
+  width: 227.5px;
+}
+
+.mainPage__pinkSpermSmeared {
+  position: absolute;
+  left: 30px;
+  top: 593px;
+  width: 279.5px;
+}
+
+.mainPage__baktSmeared1 {
+  position: absolute;
+  left: 347.5px;
+  top: 631px;
+  width: 84.5px;
+}
+
+.mainPage__baktSmeared2 {
+  position: absolute;
+  left: 917px;
+  top: 30px;
+  width: 71px;
+}
+
+.mainPage__text {
+  position: absolute;
+  left: 67px;
+  top: 165px;
+  z-index: 1;
+}
+
+.mainPage__text__hello {
+  font-family: "DIN Pro Regular";
+  font-size: 27px;
+  color: rgb(36, 36, 36);
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.mainPage__text__title b {
+  font-family: "Gilroy ExtraBold";
+}
+
+.mainPage__text__title {
+  font-size: 117px;
+  font-family: "Gilroy Light";
+  color: rgb(23, 23, 23);
+  text-transform: uppercase;
+  line-height: 1;
+  text-align: left;
+  margin: 0;
+  margin-top: 10px;
+}
+
+.mainPage__button {
+  position: absolute;
+  left: 627.5px;
+  top: 464.5px;
+  background-color: rgb(255, 106, 159);
+  width: 288.5px;
+  height: 80.5px;
+  border-radius: 40px;
+  border: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: "DIN Pro Regular";
+  font-size: 27px;
+  padding-left: 19.5px;
+  gap: 20px;
+  z-index: 2;
+}
+
+.mainPage__button__arrow-contaner {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 5px solid #0000;
+  background: linear-gradient(black, black) padding-box,
+    linear-gradient(132deg, rgb(204, 79, 122), rgb(236, 142, 175)) border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

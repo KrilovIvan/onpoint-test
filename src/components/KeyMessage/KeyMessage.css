@@ -1,0 +1,201 @@
+@font-face {
+  font-family: "DIN Pro";
+  src: url("../../fonts/DINPro.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Gilroy ExtraBold";
+  src: url("../../fonts/Gilroy-Extrabold.ttf") format("truetype");
+}
+.KeyMessage-contaner {
+  background: url("../../media/bgKeyMessage.png");
+  background-size: 1024px 768px;
+  width: 1024px;
+  height: 768px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.KeyMessage__content-contaner {
+  width: 946px;
+  height: 688.5px;
+  padding-top: 79.5px;
+  padding-left: 49px;
+  display: flex;
+  flex-direction: row;
+}
+
+.bottle-image {
+  width: 233px;
+  height: 688.5px;
+  z-index: 4;
+}
+
+.KeyMessage__title-content {
+  margin-top: 89.5px;
+}
+
+.KeyMessage__content {
+  margin-left: 63px;
+}
+
+.KeyMessage__title-key {
+  font-family: "DIN Pro";
+  font-size: 27px;
+  line-height: 1;
+  text-align: left;
+  letter-spacing: 0.06em;
+  color: rgb(36, 36, 36);
+}
+
+.KeyMessage__title-brend {
+  font-family: "Gilroy";
+  font-size: 95px;
+  letter-spacing: 0.11em;
+  color: rgb(36, 36, 36);
+  text-align: left;
+  line-height: 1;
+  margin-left: -5px;
+}
+
+.KeyMessage__content-windows {
+  margin-top: 92px;
+  margin-left: -118.5px;
+  display: grid;
+  grid-template-areas:
+    "eat calendar"
+    "eat button";
+  row-gap: 35.5px;
+  column-gap: 40.5px;
+}
+
+.KeyMessage__content-windows__eat {
+  grid-area: eat;
+  width: 413.5px;
+  height: 265px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 5.446px 8.387px 232.5px 17.5px rgba(157, 185, 198, 0.39);
+  border-radius: 40px;
+  padding: 52.5px 49.5px 73.5px 125px;
+}
+
+.KeyMessage__content-windows__calendar {
+  grid-area: calendar;
+  width: 263px;
+  height: 150px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 5.446px 8.387px 232.5px 17.5px rgba(157, 185, 198, 0.39);
+  border-radius: 40px;
+  padding: 52.5px 87px 48.5px 42px;
+}
+
+.button-details {
+  align-self: flex-end;
+  grid-area: button;
+  background-color: rgb(255, 106, 159);
+  width: 263.5px;
+  height: 80.5px;
+  border-radius: 40px;
+  border: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: "DIN Pro Regular";
+  font-size: 27px;
+  padding-left: 19.5px;
+  gap: 20px;
+  z-index: 2;
+}
+
+.button-details__plus-contaner {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 5px solid #0000;
+  background: linear-gradient(black, black) padding-box,
+    linear-gradient(132deg, rgb(204, 79, 122), rgb(236, 142, 175)) border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.KeyMessage__content-windows__text {
+  font-family: "DIN Pro Regular";
+  font-size: 25px;
+  margin: 0;
+}
+
+.KeyMessage__content-windows__icon-eat {
+  width: 67.5px;
+  position: absolute;
+  left: 2396px;
+  top: 346px;
+}
+
+.KeyMessage__content-windows__icon-calendar {
+  width: 70px;
+  position: absolute;
+  left: 2770px;
+  top: 354.5px;
+}
+
+.buble1,
+.buble2,
+.buble3,
+.buble4,
+.buble5,
+.buble6,
+.buble7,
+.buble8 {
+  position: absolute;
+}
+
+.buble1 {
+  width: 34px;
+  top: 212.5px;
+  left: 2122px;
+  z-index: 4;
+}
+.buble2 {
+  width: 112.5px;
+  top: 317px;
+  left: 2231.5px;
+  z-index: 4;
+}
+.buble3 {
+  width: 37px;
+  top: 65.5px;
+  left: 2242.5px;
+  z-index: 4;
+}
+.buble4 {
+  width: 61.5px;
+  top: 591px;
+  left: 2287px;
+  z-index: 4;
+}
+.buble5 {
+  width: 68px;
+  top: 155.5px;
+  left: 2229px;
+  z-index: 5;
+}
+.buble6 {
+  width: 142.5px;
+  top: 703px;
+  left: 2229.5px;
+  z-index: 5;
+}
+.buble7 {
+  width: 33px;
+  top: 453.5px;
+  left: 2055.5px;
+  z-index: 5;
+}
+.buble8 {
+  width: 74.5px;
+  top: 553.5px;
+  left: 2070px;
+  z-index: 5;
+}
