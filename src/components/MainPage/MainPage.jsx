@@ -26,8 +26,12 @@ const MainPage = ({ right }) => {
           alt="pinkSperm"
         />
         <img className="mainPage__bakt1" src={bakt1MainPage} alt="bakt1" />
+
         <img className="mainPage__bakt2" src={bakt2MainPage} alt="bakt2" />
-        <img className="mainPage__virus1" src={virusMainPage} alt="virus1" />
+
+        <div className="mainPage__virus1-cont">
+          <img className="mainPage__virus1" src={virusMainPage} alt="virus1" />
+        </div>
         <img className="mainPage__virus2" src={virus2MainPage} alt="virus2" />
         <img
           className="mainPage__pinkSpermSmeared"

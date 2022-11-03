@@ -8,7 +8,7 @@ const FirstPage = () => {
   ];
   const textFirMap = textFir.map((el) => {
     return (
-      <div className="pages__cont">
+      <div className="pages__cont" key={textFir.indexOf(el)}>
         <span className="pages__num">{`0${textFir.indexOf(el) + 1}`}</span>
         <p className="pages__text">{el}</p>
       </div>

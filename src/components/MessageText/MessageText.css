@@ -100,24 +100,26 @@ input[type="range"]::-webkit-slider-thumb {
 .sperm5 {
   position: absolute;
   width: 1024px;
+  opacity: 0.5;
 }
 
-.sperm1 {
-  opacity: 0.529;
+.sperm1-animated,
+.sperm2-animated,
+.sperm3-animated,
+.sperm4-animated,
+.sperm5-animated {
+  animation: transfSp 2s linear;
+  position: absolute;
+  width: 1024px;
 }
 
-.sperm2 {
-  opacity: 0.49;
-}
-
-.sperm3 {
-  opacity: 0.49;
-}
-
-.sperm4 {
-  opacity: 0.49;
-}
-
-.sperm5 {
-  opacity: 0.529;
+@keyframes transfSp {
+  from {
+    transform: translate(200px, 100px);
+    opacity: 0;
+  }
+  to {
+    transform: translate(0px, 0px);
+    opacity: 0.5;
+  }
 }

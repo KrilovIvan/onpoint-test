@@ -36,6 +36,9 @@
   position: absolute;
   top: 503.5px;
   left: 22.5px;
+
+  animation: tranfBact1 5s linear infinite;
+  animation-direction: alternate-reverse;
 }
 
 .mainPage__bakt2 {
@@ -43,13 +46,26 @@
   left: 744.5px;
   top: 61.5px;
   width: 62.5px;
+  animation: tranfBact2 5s linear infinite;
+  animation-direction: alternate-reverse;
 }
 
-.mainPage__virus1 {
+.mainPage__virus1-cont {
+  animation: transfVir1 5s linear infinite;
+  animation-direction: alternate-reverse;
   position: absolute;
   left: 861.5px;
   top: 200.5px;
+  width: 111px;
+  height: 114px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+}
+.mainPage__virus1 {
   width: 110.5px;
+  animation: rotation 20s linear infinite;
 }
 
 .mainPage__virus2 {
@@ -57,6 +73,7 @@
   left: 542px;
   top: 641.5px;
   width: 227.5px;
+  animation: scaleVir 5s linear infinite;
 }
 
 .mainPage__pinkSpermSmeared {
@@ -139,4 +156,55 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@keyframes transfVir1 {
+  from {
+    transform: translate(0px, 0px);
+  }
+  to {
+    transform: translate(-110px, -90px);
+  }
+}
+
+@keyframes tranfBact1 {
+  from {
+    transform: translate(0px, 0px);
+  }
+  to {
+    transform: translate(50px, 30px);
+  }
+}
+
+@keyframes tranfBact2 {
+  from {
+    transform: translate(0px, 0px);
+  }
+  to {
+    transform: translate(50px);
+  }
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes scaleVir {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.25);
+  }
+  100% {
+    transform: scale(1);
+  }
 }

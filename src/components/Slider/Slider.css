@@ -3,12 +3,12 @@
   flex-direction: row;
   height: 768px;
   width: 1024px;
+  overflow: hidden;
 }
 
 .slider-contaner__window {
   height: 768px;
   width: 1024px;
-
   overflow: hidden;
 }
 

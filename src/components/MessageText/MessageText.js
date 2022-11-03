@@ -1,25 +1,45 @@
-import React from "react";
+import React, { useState, useRef } from "react";
 import "./MessageText.css";
 import sperm1 from "../../media/sp1.png";
 import sperm2 from "../../media/sp2.png";
 import sperm3 from "../../media/sp3.png";
 import sperm4 from "../../media/sp4.png";
 import sperm5 from "../../media/sp5.png";
-const MessageText = () => {
-  const scroll = () => {
-    var rng = document.getElementById("r1");
-    var p = document.getElementById("one");
-    var txt = document.getElementById("text");
-    txt.scrollTop = rng.value;
-    p.innerHTML = rng.value;
+
+const MessageText = ({ offset }) => {
+  const [range, setRange] = useState(0);
+  const topRef = useRef(null);
+  const scroll = (e) => {
+    setRange(e?.target?.value);
+    topRef.current.scrollTop = range;
   };
   return (
     <div className="MessageText-contaner">
-      <img src={sperm1} alt="sperm1" className="sperm1" />
-      <img src={sperm2} alt="sperm2" className="sperm2" />
-      <img src={sperm3} alt="sperm3" className="sperm3" />
-      <img src={sperm4} alt="sperm4" className="sperm4" />
-      <img src={sperm5} alt="sperm5" className="sperm5" />
+      <img
+        src={sperm1}
+        alt="sperm1"
+        className={offset === -1024 ? "sperm1-animated" : "sperm1"}
+      />
+      <img
+        src={sperm2}
+        alt="sperm2"
+        className={offset === -1024 ? "sperm2-animated" : "sperm2"}
+      />
+      <img
+        src={sperm3}
+        alt="sperm3"
+        className={offset === -1024 ? "sperm3-animated" : "sperm3"}
+      />
+      <img
+        src={sperm4}
+        alt="sperm4"
+        className={offset === -1024 ? "sperm4-animated" : "sperm4"}
+      />
+      <img
+        src={sperm5}
+        alt="sperm5"
+        className={offset === -1024 ? "sperm5-animated" : "sperm5"}
+      />
       <div className="MessageText__text-contaner">
         <p className="MessageText__title">
           ТЕКСТ
@@ -31,10 +51,16 @@ const MessageText = () => {
           min="0"
           max="170"
           step="2"
-          onInput={scroll}
+          onChange={scroll}
           id="r1"
+          value={range}
         />
-        <div className="MessageText__text" id="text">
+        <div
+          className="MessageText__text"
+          id="text"
+          ref={topRef}
+          style={{ scrollTop: { range } }}
+        >
           <b>Lorem ipsum dolor sit amet</b>, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua.
           <br />

@@ -8,7 +8,7 @@ const SecPage = () => {
   ];
   const textSecMap = textSec.map((el) => {
     return (
-      <div className="pages__cont">
+      <div className="pages__cont" key={textSec.indexOf(el)}>
         <span className="pages__num">{`0${textSec.indexOf(el) + 4}`}</span>
         <p className="pages__text">{el}</p>
       </div>

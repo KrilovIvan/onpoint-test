@@ -156,46 +156,143 @@
   top: 212.5px;
   left: 2122px;
   z-index: 4;
+  animation: transfBuble1 5s linear infinite;
+  animation-direction: alternate-reverse;
 }
 .buble2 {
   width: 112.5px;
   top: 317px;
   left: 2231.5px;
   z-index: 4;
+  animation: transfBuble2 5s linear infinite;
+  animation-direction: alternate-reverse;
 }
 .buble3 {
   width: 37px;
   top: 65.5px;
   left: 2242.5px;
   z-index: 4;
+  animation: transfBuble3 5s linear infinite;
+  animation-direction: alternate-reverse;
 }
 .buble4 {
   width: 61.5px;
   top: 591px;
   left: 2287px;
   z-index: 4;
+  animation: transfBuble4 5s linear infinite;
+  animation-direction: alternate-reverse;
 }
 .buble5 {
   width: 68px;
   top: 155.5px;
   left: 2229px;
   z-index: 5;
+  animation: transfBuble5 5s linear infinite;
+  animation-direction: alternate-reverse;
 }
 .buble6 {
   width: 142.5px;
   top: 703px;
   left: 2229.5px;
   z-index: 5;
+  animation: transfBuble6 5s linear infinite;
+  animation-direction: alternate-reverse;
 }
 .buble7 {
   width: 33px;
   top: 453.5px;
   left: 2055.5px;
   z-index: 5;
+  animation: transfBuble7 5s linear infinite;
+  animation-direction: alternate-reverse;
 }
 .buble8 {
   width: 74.5px;
   top: 553.5px;
   left: 2070px;
   z-index: 5;
+  animation: transfBuble8 3s linear infinite;
+  animation-direction: alternate-reverse;
+}
+
+@keyframes transfBuble1 {
+  from {
+    transform: translate(0px, 0px);
+  }
+  to {
+    transform: translate(50px, 0px);
+  }
+}
+
+@keyframes transfBuble2 {
+  0% {
+    transform: scale(0.75) translate(0px, 0px);
+  }
+  50% {
+    transform: scale(1.25) translate(10px, 0px);
+  }
+  100% {
+    transform: scale(1) translate(30px, 0px);
+  }
+}
+
+@keyframes transfBuble3 {
+  0% {
+    transform: scale(1) translate(0px, 0px);
+  }
+  50% {
+    transform: scale(1) translate(-15px, 15px);
+  }
+  100% {
+    transform: scale(1) translate(20px, 50px);
+  }
+}
+
+@keyframes transfBuble4 {
+  0% {
+    transform: scale(1) translate(0px, 0px);
+  }
+  50% {
+    transform: scale(1) translate(20px, 20px);
+  }
+  100% {
+    transform: scale(1) translate(30px, 10px);
+  }
+}
+
+@keyframes transfBuble5 {
+  from {
+    transform: translate(0px, 0px);
+  }
+  to {
+    transform: translate(30px, 50px);
+  }
+}
+
+@keyframes transfBuble6 {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.25);
+  }
+}
+
+@keyframes transfBuble7 {
+  from {
+    transform: translate(15px, 0px);
+  }
+  to {
+    transform: translate(-5px, 10px);
+  }
+}
+
+@keyframes transfBuble8 {
+  from {
+    transform: scale(0.9) translate(20px, 0px);
+  }
+  to {
+    transform: scale(1.1) translate(0px, 0px);
+  }
 }

@@ -10,6 +10,7 @@ const PAGE_WIDTH = 1024;
 const Slider = () => {
   const [offset, setOffset] = useState(0);
   const [touchPosition, setTouchPosition] = useState(null);
+
   const left = () => {
     setOffset((currentOffset) => {
       const newOffset = currentOffset + PAGE_WIDTH;
@@ -68,7 +69,7 @@ const Slider = () => {
             style={{ transform: `translateX(${offset}px)` }}
           >
             <MainPage right={right} />
-            <MessageText />
+            <MessageText offset={offset} />
             <KeyMessage />
           </div>
         </div>
